@@ -268,10 +268,87 @@ form input:focus, form textarea:focus {
     margin-top: 2em;
 }
 
+/* --- MODAL DE DOCUMENTACIÓN DE PROYECTOS --- */
+.project-trigger { cursor: pointer; }
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(1, 4, 9, 0.75);
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+.modal-overlay.is-visible { display: flex; }
+
+.modal-box {
+    position: relative;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    max-width: 42em;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2.5em;
+    box-sizing: border-box;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1em; right: 1em;
+    background: transparent;
+    border: 0;
+    color: var(--text-muted);
+    font-size: 1.5em;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.modal-close:hover { color: var(--accent-color); }
+
+.modal-box h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.75em;
+    padding-right: 1em;
+}
+
+.modal-tags { margin-bottom: 1em; }
+
+.modal-body {
+    color: var(--text-main);
+    line-height: 1.7em;
+}
+
+.modal-body ul {
+    list-style: disc;
+    margin: 0.5em 0 1em 1.5em;
+}
+
+.modal-body li { margin-bottom: 0.4em; }
+
+.modal-body code {
+    font-family: 'Fira Code', monospace;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    font-size: 0.9em;
+    color: var(--accent-color);
+}
+
 /* RESPONSIVE (Mantenido para Criterio 2) */
 @media screen and (max-width: 736px) {
     .wrapper { padding: 3em 0; }
     #header { height: 18em; }
     #logo h1 { font-size: 1.5em; }
     #nav { display: none; } /* En móvil el JS de la plantilla activará el panel lateral */
+
+    .modal-box { padding: 1.5em; max-height: 85vh; }
 }
