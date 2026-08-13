@@ -194,7 +194,10 @@ a:hover { text-decoration: underline; }
     color: var(--accent-color);
     margin-bottom: 1em;
 }
-
+.highlight img{
+    width: 50%;
+    height: 100%;
+}
 /* Botones Estilo GitHub */
 .button.style1 {
     background: var(--accent-green) !important;
