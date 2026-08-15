@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css" />
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -19,8 +20,12 @@
 
 					<!-- Logo -->
 						<div id="logo">
+							<img src="images/Foto.jpeg" alt="Foto de Anthony Sutta Atayupanqui" class="profile-photo-header" />
 							<h1>Hola, mi nombre es<br> Anthony Sutta Atayupanqui</h1>
 						</div>
+
+					<!-- Botón menú móvil -->
+						<a href="#" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">&#9776;</a>
 
 					<!-- Nav -->
 						<nav id="nav">
@@ -58,8 +63,8 @@
 					<div class="container">
 
 						<!-- Image -->
-							<a href="#" class="image featured">
-								<img src="images/pic01.jpg" alt="" />
+							<a href="#" class="image featured skills-banner-link" >
+								<img src="images/banner2.gif" alt="" />
 							</a>
 
 						<!-- Features -->
@@ -72,37 +77,43 @@
 									<div class="row">
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon solid fa-code">Desarrollo Web (PHP / CodeIgniter)</h3>
+												<div class="skill-icon"><i class="devicon-php-plain colored"></i></div>
+												<h3>Desarrollo Web (PHP / CodeIgniter)</h3>
 												<p>Construcción de sitios y sistemas web con PHP y el framework CodeIgniter, desde el frontend hasta la lógica del servidor.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon solid fa-terminal">Programación en C</h3>
+												<div class="skill-icon"><i class="devicon-c-plain colored"></i></div>
+												<h3>Programación en C</h3>
 												<p>Desarrollo de programas a bajo nivel para el curso de Sistemas Operativos, incluyendo simulación de algoritmos y gestión de memoria.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon solid fa-database">Bases de Datos (MySQL)</h3>
+												<div class="skill-icon"><i class="devicon-mysql-plain colored"></i></div>
+												<h3>Bases de Datos (MySQL)</h3>
 												<p>Diseño de esquemas, vistas y consultas complejas con joins entre múltiples tablas para sistemas web reales.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon solid fa-laptop-code">Java</h3>
+												<div class="skill-icon"><i class="devicon-java-plain colored"></i></div>
+												<h3>Java</h3>
 												<p>Desarrollo de aplicaciones de escritorio con arquitectura en capas y conexión a bases de datos vía JDBC.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon solid fa-server">APIs REST (Node.js)</h3>
+												<div class="skill-icon"><i class="devicon-nodejs-plain colored"></i></div>
+												<h3>APIs REST (Node.js)</h3>
 												<p>Construcción de APIs con Express, autenticación con JWT y documentación de endpoints.</p>
 											</section>
 										</div>
 										<div class="col-6 col-12-medium">
 											<section>
-												<h3 class="icon solid fa-code-branch">Control de Versiones (Git)</h3>
+												<div class="skill-icon"><i class="devicon-git-plain colored"></i></div>
+												<h3>Control de Versiones (Git)</h3>
 												<p>Manejo de repositorios, ramas y control de cambios en mis proyectos personales y académicos.</p>
 											</section>
 										</div>
@@ -125,7 +136,7 @@
 
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/logo.jpg" alt="Teatro Andino Kusiwasi" /></a>
+									<a href="#" class="image featured"><img src="images/logo.png" alt="Teatro Andino Kusiwasi" /></a>
 									<h3><a href="#" class="project-trigger" data-project="kusiwasi">Teatro Andino Kusiwasi</a></h3>
 									<p>Sitio web de gestión de reservas y cartelera para un teatro, desarrollado con CodeIgniter (PHP) y MySQL.</p>
 									<ul class="actions">
@@ -158,7 +169,7 @@
 
 							<div class="col-4 col-12-medium">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="API REST de gestión de tareas" /></a>
+									<a href="#" class="image featured"><img src="images/api.webp" alt="API REST de gestión de tareas" /></a>
 									<h3><a href="#" class="project-trigger" data-project="api-tareas">API REST - Gestión de Tareas</a></h3>
 									<p>API RESTful para la gestión de tareas y proyectos, con autenticación de usuarios mediante JWT.</p>
 									<ul class="actions">
@@ -183,13 +194,13 @@
 
 			<!-- Footer -->
 				<section id="footer" class="wrapper">
-					<div class="title">The Rest Of It</div>
+					<div class="title">Contacto</div>
 					<div class="container">
 						<header class="style1">
-							<h2>Ipsum sapien elementum portitor?</h2>
+							<h2>¿Tienes un proyecto en mente?</h2>
 							<p>
-								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-								Nam pharetra laoreet imperdiet volutpat etiam feugiat.
+								Escríbeme y cuéntame en qué estás trabajando.<br />
+								Respondo por correo o por mis redes.
 							</p>
 						</header>
 						<div class="row">
@@ -200,18 +211,18 @@
 										<form method="post" action="#">
 											<div class="row gtr-50">
 												<div class="col-6 col-12-small">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
+													<input type="text" name="name" id="contact-name" placeholder="Nombre" />
 												</div>
 												<div class="col-6 col-12-small">
-													<input type="text" name="email" id="contact-email" placeholder="Email" />
+													<input type="text" name="email" id="contact-email" placeholder="Correo" />
 												</div>
 												<div class="col-12">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+													<textarea name="message" id="contact-message" placeholder="Mensaje" rows="4"></textarea>
 												</div>
 												<div class="col-12">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
-														<li><input type="reset" class="style2" value="Reset" /></li>
+														<li><input type="submit" class="style1" value="Enviar" /></li>
+														<li><input type="reset" class="style2" value="Limpiar" /></li>
 													</ul>
 												</div>
 											</div>
@@ -226,37 +237,35 @@
 										<div class="row">
 											<div class="col-6 col-12-small">
 												<section>
-													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<h3 class="icon solid fa-map-marker-alt">Ubicación</h3>
 													<p>
-														Untitled Corp<br />
-														1234 Somewhere Rd<br />
-														Nashville, TN 00000
+														Cusco, Perú<br />
+														Universidad Andina del Cusco
 													</p>
 												</section>
 											</div>
 											<div class="col-6 col-12-small">
 												<section>
-													<h3 class="icon solid fa-comment">Social</h3>
+													<h3 class="icon solid fa-code-branch">Redes</h3>
 													<p>
-														<a href="#">@untitled-corp</a><br />
-														<a href="#">linkedin.com/untitled</a><br />
-														<a href="#">facebook.com/untitled</a>
+														<a href="https://github.com/" target="_blank" rel="noopener">github.com/tu-usuario</a><br />
+														<a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/tu-usuario</a>
 													</p>
 												</section>
 											</div>
 											<div class="col-6 col-12-small">
 												<section>
-													<h3 class="icon solid fa-envelope">Email</h3>
+													<h3 class="icon solid fa-envelope">Correo</h3>
 													<p>
-														<a href="#">info@untitled.tld</a>
+														<a href="mailto:anthony.sutta@example.com">anthony.sutta@example.com</a>
 													</p>
 												</section>
 											</div>
 											<div class="col-6 col-12-small">
 												<section>
-													<h3 class="icon solid fa-phone">Phone</h3>
+													<h3 class="icon solid fa-phone">Teléfono</h3>
 													<p>
-														(000) 555-0000
+														+51 900 000 000
 													</p>
 												</section>
 											</div>
@@ -267,7 +276,7 @@
 						</div>
 						<div id="copyright">
 							<ul>
-								<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Anthony Sutta Atayupanqui.</li><li>Diseño base: <a href="http://html5up.net" target="_blank" rel="noopener">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</div>
@@ -284,6 +293,28 @@
 			<script src="assets/js/main.js"></script>
 
 			<!-- Datos y lógica de los modales de proyectos -->
+			<script>
+				(function () {
+					var navToggle = document.getElementById("nav-toggle");
+					var nav = document.getElementById("nav");
+
+					if (navToggle && nav) {
+						navToggle.addEventListener("click", function (e) {
+							e.preventDefault();
+							var isOpen = nav.classList.toggle("is-open");
+							navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+						});
+
+						nav.querySelectorAll("a").forEach(function (link) {
+							link.addEventListener("click", function () {
+								nav.classList.remove("is-open");
+								navToggle.setAttribute("aria-expanded", "false");
+							});
+						});
+					}
+				})();
+			</script>
+
 			<script>
 				(function () {
 					var projectsData = {
